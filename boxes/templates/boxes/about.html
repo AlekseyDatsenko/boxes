@@ -1,0 +1,13 @@
+{% extends 'boxes/index.html' %}
+{% load static %}
+{% block content %}
+<div class="container" id="about">
+  <div class="row">
+  <div class="col-sm">
+    {% for i in about %}
+        <p id="about">{{ i.text|linebreaksbr }}</p>    
+    {% endfor %}
+  </div>
+  </div>
+</div>
+{% endblock %}

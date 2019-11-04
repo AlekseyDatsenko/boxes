@@ -1,0 +1,15 @@
+{% extends 'boxes/index.html' %}
+{% load static %}
+{% block content %}
+    {% for i in stock %}
+<div class="container" id="about">
+  <div class="row">
+    <div class="col-sm">
+      <img src="{{ i.image.url }}" alt="Картинка">
+      <p id="about">{{ i.text|linebreaksbr }}</p>  
+    </div>
+  </div>
+</div>
+    {% endfor %}
+{% endblock %}
+  

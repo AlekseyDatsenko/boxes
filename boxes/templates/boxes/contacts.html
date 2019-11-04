@@ -1,0 +1,16 @@
+{% extends 'boxes/index.html' %}
+{% load static %}
+{% block content %}
+<div class="container" id="contacts">
+  <div class="row">
+  <div class="col-sm">
+    {% for i in contacts %}
+        <h1>{{ i.phone }}</h1>    
+    {% endfor %}
+    {% for i in contacts %}
+        <h1>{{ i.adress }}</h1>    
+    {% endfor %}
+  </div>
+  </div>
+</div>
+{% endblock %}

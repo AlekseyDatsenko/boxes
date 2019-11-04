@@ -1,0 +1,34 @@
+{% load static %}
+body {
+	font-family: 'Roboto Slab', serif;
+}	
+
+.jumbotron {
+	text-align: center;
+}	
+
+.row {
+	text-align: center;
+}
+
+#box {
+	padding-top: 3%;
+}		
+
+#about {
+    text-align: justify;
+    padding-top: 1%;
+   }
+
+#contacts {
+    text-align: justify;
+    padding-top: 1%;
+   }
+
+hr {
+    height: 1px; 
+    width: 86%; 
+    border:none; 
+    color:#333; 
+    background-color:#333;
+   }

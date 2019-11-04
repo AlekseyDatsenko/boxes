@@ -1,0 +1,17 @@
+{% load static %}
+{% block footer %}
+	<hr>
+	<div class="container" id="footer">
+      <div class="row">
+        <div class="col-sm">
+         {% for i in contact %}
+           <h2>{{ i.phone }}</h2>
+         {% endfor %}
+		</div>
+	    <div class="col-sm">
+		<img src="{% static "img/5.jpg" %}" class="img-fluid">
+	    </div>
+      </div>
+    </div>
+    <hr>
+{% endblock %}
